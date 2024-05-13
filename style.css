@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+  --font-rowdies: 'Rowdies', sans-serif;
+  --font-caveat: 'Caveat', cursive;
+  --color-green: #29a587;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: var(--font-rowdies);
+}
+
+html {
+  /* 1rem = 16px default */
+  font-size: 62.5%;
+  /* 1rem = 10px custom */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#232932, #2c3138, #232932);
+}
+
+/* ================= START OF HERO SECTION ===================== */
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-bg-heading {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 30rem;
+  font-family: var(--font-caveat);
+  color: #31363d;
+  opacity: 0.5;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.developer-info {
+  margin-right: 15rem;
+}
+
+.greeting {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.greeting span {
+  color: var(--color-green);
+}
+
+.name {
+  font-size: 10rem;
+  width: 60rem;
+  margin: 4rem 0 2rem 0;
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.name span {
+  color: var(--color-green);
+}
+
+.prof {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin-bottom: 6rem;
+}
+
+.prof span {
+  color: var(--color-green);
+  font-family: var(--font-caveat);
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 1.2rem;
+}
+
+.about {
+  width: 60rem;
+  font-family: var(--font-caveat);
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #a9abae;
+  margin-bottom: 5rem;
+}
+
+.social-media {
+  margin-bottom: 5rem;
+}
+
+.social-media i {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 2rem;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-media i:hover {
+  color: var(--color-green);
+}
+
+.btn {
+  width: 20rem;
+  height: 6rem;
+  border: 2px solid #bbb;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  margin-right: 7rem;
+  border-radius: 3rem;
+}
+
+.btn::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-green);
+  border-radius: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.btn:hover::before {
+  transform: scale(1);
+}
+
+.dev-img-wrapper {
+  width: 60rem;
+  height: 60rem;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  padding: 2rem 2rem 0 2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.dev-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.dev-work {
+  width: 25rem;
+  height: 9rem;
+  background-color: #1d222a;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0.2rem solid #bbb;
+  border-radius: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+
+.dev-experience {
+  bottom: 10rem;
+  right: 40rem;
+}
+
+.dev-projects {
+  bottom: 1rem;
+  right: -2rem;
+}
+
+.dev-work span:nth-child(1) {
+  font-size: 3rem;
+  width: 50%;
+  text-align: center;
+}
+
+.dev-work span:nth-child(2) {
+  color: var(--color-green);
+  width: 50%;
+}
+
+/* ================= END OF HERO SECTION ===================== */
